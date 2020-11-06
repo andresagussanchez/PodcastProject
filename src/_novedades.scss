@@ -1,0 +1,79 @@
+.novedades {
+     &--skew {
+        padding-top: 75px;
+        background: linear-gradient(225deg, #0000ff, #0000a3);
+        clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+        color: #ffffff;
+        padding-bottom: 50px;
+    } 
+
+    &--container {
+        width: 100%;
+        height: 518px;
+        text-align: center;
+        padding-top: 213px;
+    }
+
+    &--button {
+        width: 345px;
+        height: 56px;
+        margin-top: 36px;
+        padding: 16px 0;
+        background-color: #00F3BB ;
+        font-family: $button--font-family;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+    }
+
+    &--button:hover {
+        color: #ffffff;
+        background: linear-gradient(to right, #00f0b8, #0000fe)
+    }
+
+}
+
+@media screen and (max-width: 417px) {
+    .novedades {
+        &--skew {
+            height: 341px;
+            padding-top: 30px;
+            background: linear-gradient(225deg, #0000ff, #0000a3);
+            clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+            color: #ffffff;
+            padding-bottom: 50px;
+       } 
+
+       
+       &--container {
+           width: 100%;
+           height: 341px;
+           text-align: center;
+           padding-top: 64px;
+       }
+
+       &--h2 {
+        width: 100%;
+        padding: 0 14px;
+    }
+
+       &--button {
+           width: 288px;
+           height: 48px;
+           margin-top: 46px;
+           padding: 16px 0;
+           background-color: #00F3BB ;
+           font-family: $button--font-family;
+           font-size: 16px;
+           font-weight: 500;
+           border: none;
+           cursor: pointer;
+       }
+   
+       &--button:hover {
+           color: #ffffff;
+           background: linear-gradient(to right, #00f0b8, #0000fe)
+       }
+    }   
+
+}

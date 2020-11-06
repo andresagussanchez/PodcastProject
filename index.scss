@@ -1,0 +1,52 @@
+@import "src/fonts";
+@import "src/resets";
+@import "src/variables";
+@import "src/navbar";
+@import "src/hello";
+@import "src/episodios";
+@import "src/dedonde";
+@import "src/invitados";
+@import "src/temas";
+@import "src/novedades";
+@import "src/footer";
+
+html {
+    font-size: 16px;
+    font-weight: 400;
+    color: #060A24;
+    font-family: $font--font-family;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 400;
+    font-family: $font2--font-family;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 400;
+    font-family: $font2--font-family;
+}
+
+@media screen and (max-width: 417px) {
+    html {
+        font-size: 14px;
+        font-weight: 400;
+        color: #060A24;
+        font-family: $font--font-family;
+    }
+    
+    h1 {
+        font-size: 36px;
+        font-weight: 400;
+        font-family: $font2--font-family;
+    }
+    
+    h2 {
+        font-size: 36px;
+        font-weight: 400;
+        font-family: $font2--font-family;
+    }
+
+}

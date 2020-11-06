@@ -1,0 +1,30 @@
+@import "src/fonts";
+@import "src/resets";
+@import "src/variables";
+@import "src/navbar";
+@import "src/hello";
+@import "src/episodios";
+@import "src/dedonde";
+@import "src/invitados";
+@import "src/temas";
+@import "src/novedades";
+@import "src/footer";
+
+html {
+    font-size: 16px #060A24;
+    color: #060A24;
+    font-family: $font--font-family;
+}
+
+h1 {
+    font-size: 4em;
+    font-family: $font2--font-family;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: $font2--font-family;
+}
+
+
+@import "media/media"

@@ -1,0 +1,159 @@
+.navbar {
+    &--container {
+        background-color: $main-color;
+        display: flex;
+        justify-content: space-between;
+        width: 100% ;
+        height: 80px;
+    }
+
+    &--brand {
+        height: $navbar-height;
+        display: flex;
+        margin: 22px 0 22px 100px;
+        
+    }
+
+    &--hamb {
+        display: none;
+    }
+
+    &--menu {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 100px;
+        
+           li {
+              margin-left: 48px;
+              cursor: pointer;
+            }
+
+            li:hover {
+                margin-left: 48px;
+                cursor: pointer;
+                color: #00F3BB;
+              }
+
+            li:active {
+                margin-left: 48px;
+                cursor: pointer;
+                color: #060A24;
+                opacity: 56%;
+              }
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 417px) {
+
+    .navbar {
+        &--container {
+            background-color: $main-color;
+            display: flex;
+            justify-content: space-between;
+            width: 100% ;
+            height: 44px;
+        }
+    
+        &--brand {
+            height: 24px;
+            display: flex;
+            margin: 10px 0 10px 16px;
+            
+        }
+
+        &--hamb {
+            display: block;
+
+            #menu {
+                display: block;
+                position: absolute;
+                top: 16px;
+                right: 19px;
+                opacity: 0;
+                z-index: 2;
+                cursor: pointer;
+            }
+        
+            #menu:checked ~ .fa-times {
+                display: block;
+            }
+
+            #menu:checked ~ .menu-list {
+                display: block;
+            }
+
+            #menu:not(:checked) ~ .menu-list {
+                display: none;
+            }
+
+            #menu:checked ~ .fa-bars {
+                display: none;
+            }
+            #menu:not(:checked) ~ .fa-times {
+                display: none;
+            }
+            
+            
+
+
+            .fa-bars{
+                display: block;
+                position: absolute;
+                top: 16px;
+                right: 19px;
+            }
+            
+            .fa-times{
+                display: block;
+                position: absolute;
+                top: 16px;
+                right: 19px;
+            }
+
+        }
+        
+        &--menu {
+            background-color: #0000EC;
+            width: 100%;
+            height: 224px;
+            padding: 16px 0 0 16px;
+            position: absolute;
+            display: none;
+            left: 0;
+            top: 44px;
+
+               li {
+                  color: #FFFFFF;
+                  font-size: 16px;
+                  line-height: 28px;
+                  margin-left: 0;
+                  margin-bottom: 24px;
+                  cursor: pointer;
+                }
+    
+                li:hover {
+                    margin-left: 0;
+                    cursor: pointer;
+                    color: #00F3BB;
+                }
+    
+                li:active {
+                    margin-left: 0;
+                    cursor: pointer;
+                    color: #060A24;
+                    opacity: 56%;
+                }
+
+                
+    
+        }
+    }
+   
+}
+

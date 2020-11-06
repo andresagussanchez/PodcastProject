@@ -1,0 +1,95 @@
+.dedonde {
+    &--container {
+        width: 100%;
+        height: 491.4px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--cont-img {
+        width: 50%;
+        display: flex;
+
+    }
+
+    &--img {
+        width: 63.6%;
+        height: 660px;
+        margin-top: -168.6px;
+        margin-left: 200px;
+        z-index: 1;
+        padding-top: 48px;
+    }
+
+    
+    &--div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--h2 {
+        margin-top: 24px;
+        margin-left: 31.2px;
+    }
+
+    &--p {
+        width: 464px;
+        margin-left: 31.2px;
+        margin-top: 24px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 417px) {
+    .dedonde {
+        &--container {
+            width: 100%;
+            height: 850.5px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 423,5px 427px;
+        }
+    
+        &--cont-img {
+            width: 100%;
+            height: 423.5px;
+        }
+    
+        &--img {
+            width: 100%; 
+            height: 519px;
+            margin-top: -95.5px;
+            z-index: 1;
+            margin-left: -5px;
+            margin-right: 0;
+           
+        }
+    
+        
+        &--div {
+            width: 100%;
+            height: 427px;
+            margin-left: -14px;
+        }
+    
+        &--h2 {
+            font-size: 36px;
+            margin-top: 27px;
+            
+        }
+    
+        &--p {
+            font-size: 14px;
+            width: 288px;
+            margin-top: 8px;
+        }
+    
+    
+    }
+
+
+
+}
